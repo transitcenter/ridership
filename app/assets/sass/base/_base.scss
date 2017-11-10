@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: $black;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: normal;
+  background-color: $off-white;
+  @extend .font-serif;
+}
+
+span {
+  vertical-align: top;
+}
+
+img {
+  vertical-align: top;
+}
+
+svg {
+  vertical-align: top;
+}

@@ -1,0 +1,162 @@
+.map {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 6rem;
+  @media (max-width: 900px) {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.map-inner {
+  flex: 1;
+  width: 100%;
+
+  @media (max-width: 900px) {
+
+  }
+}
+
+.map-toolbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 31rem;
+  z-index: 2000;
+
+  @media (max-width: 960px) {
+    width: 25rem;
+  }
+}
+
+.map-toolbar--section {
+  flex: 1;
+  padding: 10px;
+
+  select,
+  .form-item {
+    flex: 1;
+    margin: 0 5px;
+    -moz-appearance: none;
+  }
+}
+
+.leaflet-control-container {
+  .leaflet-control {
+    border-color: black !important;
+
+    a {
+      border-color: black !important;
+    }
+  }
+}
+
+.leaflet-popup-content label {
+  font-weight: bold;
+}
+
+#legend {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  z-index: 400;
+  background-color: #fff;
+  padding: 5px;
+  border: 2px solid #000;
+  padding: 1rem;
+  transform: scale(0.9);
+  transform-origin: bottom right;
+
+  @media (min-width: 661px) and (max-width: 900px) {
+    right: initial;
+    left: 20px;
+    transform-origin: bottom left;
+  }  
+
+  @media (max-width: 660px) {
+    left: 20px;
+    right: 17px;
+    width: auto;
+    transform: none;
+    bottom: 19px;
+    width: 70px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #000;
+
+    &:before {
+      content: "Legend";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      font-family: Mark;
+      font-weight: 800;
+      line-height: 31px;
+      text-align: center;
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      width: auto;
+      height: auto;
+      z-index: 2001;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.legend-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.legend-row {
+  flex: 1;
+}
+
+.legend-label {
+  display: block;
+}
+
+.legend-swatch {
+  display: block;
+  width: 50px;
+  height: 15px;
+}
+
+#legend circle {
+  fill-opacity: 0;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.legend--title {
+  margin: -1rem -1rem 0;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.circle-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layer-name {
+  margin-top: 0;
+}

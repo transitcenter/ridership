@@ -1,0 +1,149 @@
+/* * * *
+ * Clearfix
+ * * * */
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+/* * * *
+ * Font & Text
+ * * * */
+.font-500 {
+  font-weight: 500 !important; //medium
+}
+
+.font-600 {
+  font-weight: 600 !important; //semi-bold
+}
+
+.font-700 {
+  font-weight: 700 !important; //bold
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.font-serif {
+  font-family: 'Lyon', serif !important;
+}
+
+.truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* * * *
+ * Color
+ * * * */
+.color-white {
+  color: #fff !important;
+}
+
+.color-off-white {
+  color: $off-white !important;
+}
+
+.color-purple {
+  color: $purple !important;
+}
+
+.color-base {
+  color: $black !important;
+}
+
+
+/* * * *
+ * Background-color
+ * * * */
+.background-white {
+  background-color: #fff !important;
+}
+
+.background-off-white {
+  background-color: $off-white !important;
+}
+
+.background-purple {
+  background-color: $purple !important;
+}
+
+.background-base {
+  background-color: $black !important;
+}
+
+/* * * *
+ * Layout
+ * * * */
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+
+/* * * *
+ * Display
+ * * * */
+.hidden,
+.hide {
+  display: none !important;
+}
+
+.hide-desktop {
+  @media (min-width: 901px) {
+    display: none;
+  }
+}
+
+.hide-mobile {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
