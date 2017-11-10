@@ -1,0 +1,23 @@
+.selectize-control {
+  font-family: Mark, Arial, sans-serif;
+}
+
+.selectize-input {
+  border: 2px solid black;
+}
+
+.selectize-dropdown  {
+  font-weight: 400;
+  font-size: 16px;
+  border: 2px solid black;
+  
+  .optgroup-header {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .active {
+    background-color: #000;
+    color: #fff;
+  }
+}

@@ -1,0 +1,91 @@
+.sidebar {
+  width: 60rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.5rem;
+  order: 2;
+  border-left: 3px solid $black;
+
+  @media (max-width: 900px) {
+    position: fixed;
+    z-index: 2000;
+    height: 60vh;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 50px black;
+    transform: translateY(60vh);
+    transition: .2s ease-in-out transform;
+    border: none;
+
+    &.active {
+      z-index: 1010;
+      transform: translateY(0);
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.sidebar--toggle {
+  position: absolute;
+  top: -57px;
+  right: 20px;
+  background: white;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px black;
+
+  a {
+    padding: 7px;
+    display: block;
+    margin: 0;
+    color: black;
+  }
+
+  .active & a {
+    font-size: 0;
+
+    &:after {
+      content: 'Close';
+      color: $black !important;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.sidebar--header {
+  background-color: #fff;
+  border-bottom: 3px solid $black;
+  padding: 1.4rem 1rem;
+  display: flex;
+  align-items: center;
+
+  .sidebar--title {
+    @extend .h3;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .selectize-control {
+    flex: 1;
+    height: 40px;
+  }
+}
+
+.sidebar--inner {
+  padding: 1.4rem 1rem;
+
+  @media (max-width: 900px) {
+    height: calc(100% - 59px);
+    overflow: auto;
+  }
+}
+
+.sidebar--inner {
+  flex: 1;
+  overflow: auto;
+  background: $off-white;
+}

@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+cache: yarn
+
+install:
+  - yarn install --pure-lockfile
+
+script:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master

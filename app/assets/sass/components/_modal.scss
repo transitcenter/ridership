@@ -1,0 +1,142 @@
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  opacity: 0;
+  transition: .4s ease-in-out opacity;
+
+  &.show {
+    opacity: 1;
+    display: flex !important;
+  }
+
+  &.out {
+    opacity: 0;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .logo img {
+    max-height: 10rem;
+    max-width: 100%;
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($black, .8);
+  z-index: 9990;
+}
+
+.modal-container {
+  background-color: $white;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+  width: 800px;
+  display: flex;
+  transform: translateY(40px) scale(.9);
+  transition: .3s ease-in-out transform;
+
+  .show & {
+    transform: translateY(0) scale(1);
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    max-height: 80vh;
+  }
+}
+
+.modal-split {
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  align-items: center;
+
+  + .modal-split {
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid $black;
+    background-color: $black;
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    p, .p {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 900px) {
+    align-items: initial;
+    flex: none;
+  }
+}
+
+.modal-container--header {
+  border-bottom: 1px solid darken($off-white, 10%);
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal-container--inner {
+  padding: 1.5rem 2rem;
+  max-height: 70vh;
+  overflow: auto;
+  flex: 1;
+
+  @media (max-width: 900px) {
+    max-height: inherit;
+    max-height: initial;
+  }
+}
+
+.modal-container--footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid darken($off-white, 10%);
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal-close {
+  position: absolute;
+  right: -50px;
+  opacity: .6;
+  transition: .2s ease-in-out opacity;
+
+  a {
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 900px) {
+    position: absolute;
+    right: 0px;
+    opacity: 1;
+    background: $black;
+    padding: 5px;
+  }
+}
