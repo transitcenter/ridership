@@ -83,7 +83,7 @@ TCVIZ.Config = {
         absoluteValue: 'pop_dens',
         render: 'number',
         renderChange: 'number',
-        id: 'Population Density (residents/mile<sup>2</sup>)'
+        id: 'Population Density (residents/sq.miles)'
     }, {
         text: '% Drove Alone Commute (change total %)',
         value: 'drove_c',
