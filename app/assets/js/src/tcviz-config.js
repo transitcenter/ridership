@@ -341,15 +341,15 @@ TCVIZ.Config = {
     symbol_style: {
         upt_total_c: {
             colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
-            colorBreaks: [-0.25,-0.1,0.0,0.5,1]
+            colorBreaks: [-25,-10,0.0,50,100]
         },
         upt_bus_c: {
             colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
-            colorBreaks: [-0.25,-0.1,0.0,0.5,1]
+            colorBreaks: [-25,-10,0.0,50,100]
         },
         upt_rail_c: {
             colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
-            colorBreaks: [-0.25,-0.1,0.0,0.5,1]
+            colorBreaks: [-25,-10,0.0,50,100]
         },
         avg_fare_c: {
             colors: ['#d7191c', '#fdae61', '#ffffbf', '#a6d96a', '#1a9641'],
@@ -361,7 +361,7 @@ TCVIZ.Config = {
         },
         total_expenses_c: {
             colors: ['#dfe8b8', '#f4dd9e', '#ffab5a', '#ff6161', '#ff1717'],
-            colorBreaks: [0,0.25,0.5,0.75,1]
+            colorBreaks: [0,25,50,75,100]
         },
         average_speed_c: {
             colors: ['#008837', '#a6dba0', '#f7f7f7', '#c2a5cf', '#7b3294'],
@@ -369,7 +369,7 @@ TCVIZ.Config = {
         },
         revenue_miles_c: {
             colors: ['#009b9e', '#7cc5c6', '#f1f1f1', '#dda9cd', '#c75dab'],
-            colorBreaks: [-0.025,0,0.25,0.5,.75]
+            colorBreaks: [-2.5,0,25,50,75]
         },
         revenue_hours_c: {
             colors: ['#009b9e', '#f3e0f7', '#d1afe8', '#9f82ce', '#63589f'],
@@ -377,7 +377,7 @@ TCVIZ.Config = {
         },
         gas_c: {
             colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
-            colorBreaks: [-0.1,-0.05,0.0,0.1,0.25]
+            colorBreaks: [-8,-5,0.0,5,10]
         }
     },
 
