@@ -340,99 +340,99 @@ TCVIZ.Config = {
     circle_sizes: [10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5, 35],
     symbol_style: {
         upt_total_c: {
-            colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-25,-10,0.0,50,100]
         },
         upt_bus_c: {
-            colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-25,-10,0.0,50,100]
         },
         upt_rail_c: {
-            colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-25,-10,0.0,50,100]
         },
         avg_fare_c: {
-            colors: ['#d7191c', '#fdae61', '#ffffbf', '#a6d96a', '#1a9641'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-0.25,-0.1,0.0,0.1,0.5]
         },
         farebox_recovery_c: {
-            colors: ['#d7191c', '#fdae61', '#ffffbf', '#a6d96a', '#1a9641'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-0.05,-0.025,0.0,0.025,0.05]
         },
         total_expenses_c: {
-            colors: ['#dfe8b8', '#f4dd9e', '#ffab5a', '#ff6161', '#ff1717'],
+            colors: ['#F0BD33', '#ffffbf', '#a6d96a', '#1a9641', '#005B1C'],
             colorBreaks: [0,25,50,75,100]
         },
         average_speed_c: {
-            colors: ['#008837', '#a6dba0', '#f7f7f7', '#c2a5cf', '#7b3294'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-0.5,-0.25,0.0,0.5,1]
         },
         revenue_miles_c: {
-            colors: ['#009b9e', '#7cc5c6', '#f1f1f1', '#dda9cd', '#c75dab'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-2.5,0,25,50,75]
         },
         revenue_hours_c: {
-            colors: ['#009b9e', '#f3e0f7', '#d1afe8', '#9f82ce', '#63589f'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-0.025,0.1,0.5,0.75,1]
         },
         gas_c: {
-            colors: ['#f3e79b', '#fab27f', '#eb7f86', '#b95e9a', '#5c53a5'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-8,-5,0.0,5,10]
         }
     },
 
     polygon_style: {
         forgn_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-3,0,3,10]
         },
         drove_c: {
-            colors: ['#7b3294', '#c2a5cf', '#e3d4ea', '#a6dba0', '#008837'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-10,-5,0,5,10]
         },
         carpl_c: {
-            colors: ['#7b3294', '#c2a5cf', '#e3d4ea', '#a6dba0', '#008837'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         trnst_c: {
-            colors: ['#7b3294', '#c2a5cf', '#e3d4ea', '#a6dba0', '#008837'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         emp_c: {
-            colors: ['#a16928', '#caa873', '#edeac2', '#98b7b2', '#2887a1'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-500,-200,0,200,500]
         },
 
         inc_c: {
-            colors: ['#d01c8b', '#f1b6da', '#e3d4ea', '#b8e186', '#4d9221'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-10000,-5000,0,5000,10000]
         },
         pp_dn_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-1000,-50,0,50,1000]
         },
         veh_c: {
-            colors: ['#7b3294', '#c2a5cf', '#e3d4ea', '#a6dba0', '#008837'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         fpov_c: {
-            colors: ['#4dac26', '#b8e186', '#e3d4ea', '#f1b6da', '#d01c8b'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         black_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         asian_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         hisp_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         },
         white_c: {
-            colors: ['#c75dab', '#dda9cd', '#f2dfec', '#7cc5c6', '#009b9e'],
+            colors: ['#FF0D00', '#F0BD33', '#ffffbf', '#a6d96a', '#1a9641'],
             colorBreaks: [-5,-2,0,2,5]
         }
     }
