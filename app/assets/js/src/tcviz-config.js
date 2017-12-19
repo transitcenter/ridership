@@ -5,8 +5,7 @@ TCVIZ.Config = {
     },
     SQL: {
         user: 'ridership',
-        format: 'geojson',
-        api_key: '73537cf8a5e88a4f170a0eda73deab782accaee2'
+        format: 'geojson'
     },
     defaultNtdField: 'upt_total_c',
     defaultCensusField: 'pp_dn_c',
